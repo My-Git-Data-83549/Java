@@ -19,20 +19,14 @@ public class TestPointArray1 {
 			points[i].accept();
 		}
 		
-		do
-		{
-			
-//				System.out.println("0. Exit");
 				System.out.println("1. Display Specific point");
 				System.out.println("2. Display x, y co-ordinates of all point");
 				System.out.println("3. Distance between two  points");
+				System.out.println("4. Exit");
 				choice = sc.nextInt();
 				
 				switch(choice)
 				{
-//				case 0 : 
-//					System.out.println("Thank You!!");
-//					break;
 					
 				case 1 : 
 					int index;
@@ -67,9 +61,10 @@ public class TestPointArray1 {
 						points[i].calculateDistance(points[j]);
 					}
 					break;
+					
+				case 4 : 
+					System.out.println("Thank you for using");
 				}
-				
-			
-	}while(choice!=0);
-}
+	}
+		
 }
